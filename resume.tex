@@ -1,0 +1,186 @@
+% Liam Snow's Resume/CV
+% Partial Credit to https://github.com/arasgungore/arasgungore-CV
+
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names,table}{xcolor}
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+
+% strikethrough + underline
+\usepackage{soul}
+
+% urls
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+% icons
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+% margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sections
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% make machine readable
+\pdfgentounicode=1
+
+% -- CUSTOM COMMANDS
+\newcommand{\entry}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\subheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\educationheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\projectheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\subentry}[1]{\entry{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\subheadingliststart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\subheadinglistend}{\end{itemize}}
+\newcommand{\entryliststart}{\begin{itemize}}
+\newcommand{\entrylistend}{\end{itemize}\vspace{-5pt}}
+
+% -- DOCUMENT
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape William (Liam) Snow} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:8316202176}{+1 (831) 620-2176}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:mail@liamsnow.com}{mail@liamsnow.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/william-snow-iv-140438169/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/liamsnow}{GitHub}
+    % $|$
+    % \faGlobe \hspace{.5pt} \href{https://liamsnow.com}{Portfolio}
+    % $|$
+    % \faMapMarker \hspace{.5pt} {Worcester, MA}
+\end{center}
+
+\section{Education}
+  \vspace{3pt}
+  \subheadingliststart
+    \educationheading
+      {Worcester Polytechnic Institute}{Worcester, MA}
+      {BS in Electrical and Computer Engineering}{Aug 2022 \textbf{--} May 2026}
+      {MS in Computer Science}{}
+  \subheadinglistend
+
+\section{Skills}
+  \vspace{2pt}
+  \subheadingliststart
+    \small{\entry{
+        \textbf{Languages:}{ Rust, Go, C, C\#, Java, JavaScript, TypeScript, Swift, Lua } \\ \vspace{3pt}
+        \textbf{Technologies:}{ Git, Docker, AWS, Terraform, Tailscale, Linux, Vim } \\ \vspace{3pt}
+    }}
+  \subheadinglistend
+
+\section{Experience}
+  \vspace{3pt}
+  \subheadingliststart
+    \subheading
+      {Phreesia, Inc.}{Remote}
+      {Software Intern}{Jun 2023 \textbf{--} Aug 2023}
+        \entryliststart
+            \entry{Developed new feature prototype for Integrations Department using .NET, Websockets, and REST APIs}
+            \entry{Used clean architecture practices and implemented testing}
+        \entrylistend
+    \subheading
+      {Advanced Survey Design, LLC}{Remote}
+      {Software Contractor}{Jan 2022 \textbf{--} Feb 2022}
+        \entryliststart
+            \entry{Designed survey websites using .NET Core/C\#}
+        \entrylistend
+    \subheading
+      {34 Engineering, LLC}{Kennebunk, ME}
+      {Co-Owner}{Dec 2020 \textbf{--} Aug 2022}
+        \entryliststart
+            \entry{Developed infrared machine vision camera that tracks targets at 815 frames per second}
+            \entry{Used Xilinx Artix-7 FPGA and Onsemi Python 300 Image Sensor}
+            \entry{Designed test benches, ran timing analysis and fixed correlating timing issues}
+            \entry{Worked with international PCB, lens, cable, and CNC machining manufacturers}
+        \entrylistend
+    \subheading
+      {Naval Postgraduate School}{Monterey, CA}
+      {Software Intern}{Jun 2019 \textbf{--} Oct 2020}
+        \entryliststart
+            \entry{Worked under Professor Ray Gamache programming and assembling robots for his MS classes}
+            \entry{Programmed LIDAR, ultrasonic, radar, AHRS, and GPS sensors in LabVIEW}
+        \entrylistend
+  \subheadinglistend
+
+% \section{Projects}
+%     \vspace{3pt}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%         {\textbf{Addie} $|$ \emph{\href{https://github.com/liamsnow/addie}{\color{blue}GitHub}}}{}
+%           \resumeItemListStart
+%             \resumeItem{}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+\section{Leadership \& Activities}
+  \vspace{3pt}
+  \subheadingliststart
+    \subheading
+      {BreakerBots Robotics Team}{Pacific Grove, CA}
+      {Team Captain}{Aug 2017 \textbf{--} May 2022}
+        \entryliststart
+            \entry{Lead a FIRST Robotics Competition team, overseeing and working in design, assembly, electrical, and programming}
+            \entry{Implemented state-space control algorithms and latency-accounted vision tracking}
+            \entry{Developed Electron dashboard app for monitoring, debugging, and tuning robots remotely in real-time}
+            \entry{Lead summer programming classes, teaching the local community Java, control systems, and other robot-related programming topics}
+        \entrylistend
+  \subheadinglistend
+\end{document}

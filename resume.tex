@@ -121,8 +121,8 @@
   \vspace{2pt}
   \subheadingliststart
     \small{\entry{
-        \textbf{Languages:}{ Rust, Golang, C, C\#, Java, JavaScript, TypeScript, HTML, CSS/SCSS, Swift, Lua, Python } \\ \vspace{3pt}
-        \textbf{Technologies:}{ Docker, AWS, GCP, Terraform, React, Angular, .NET, GNU/Linux (Ubuntu, Debian, Arch), Unix/Bash, Vim, Git, NodeJS, Deno, GraphQL, PostgreSQL, XCode, RTOS  } \\ \vspace{3pt}
+        \textbf{Languages:}{ Rust, Golang, C, C++, Python, Java, C\#, TypeScript, JavaScript, Lua, Swift } \\ \vspace{3pt}
+        \textbf{Technologies:}{ Docker + Compose, GNU/Linux (Debian, Arch), Unix/Bash, Vim, Git, SQL, SQLite, PostgreSQL, Templ, Gin, Axum, .NET, Deno, NodeJS, REST, GraphQL, AWS, GCP, Terraform, RTOS  } \\ \vspace{3pt}
     }}
   \subheadinglistend
 
@@ -134,13 +134,13 @@
       {Software Intern}{Jun 2023 \textbf{--} Aug 2024}
         \entryliststart
             \entry{Summer 1: Developed new feature prototype for Integrations Department using .NET, Websockets, and REST APIs.}
-            \entry{Summer 2: Parsed and tokenized Confluence pages into Chroma vector database. Setup vector search and LLM (RAG) to give users quick answers and link them to further reading in Confluence.}
+            \entry{Summer 2: Parsed and embedded Confluence pages into ChromaDB. Setup vector search and RAG to give users quick answers while citing sources and link them to further reading.}
         \entrylistend
     \subheading
       {Veripay, LLC}{Remote}
       {Backend Developer}{May 2024 \textbf{--} Jul 2024}
         \entryliststart
-            \entry{Worked at a startup creating the alpha prototype in 10 weeks.}
+            \entry{Developed alpha prototype for startup in 10 weeks.}
             \entry{Created AWS backend using Terraform. Programmed Lambda functions using Golang with Gin and PostgreSQL.}
         \entrylistend
     \subheading
@@ -153,10 +153,8 @@
     %   {34 Engineering, LLC}{Kennebunk, ME}
     %   {Co-Owner}{Dec 2020 \textbf{--} Aug 2022}
     %     \entryliststart
-    %         \entry{Developed infrared machine vision camera that tracks targets at 815 frames per second}
-    %         \entry{Used Xilinx Artix-7 FPGA and Onsemi Python 300 Image Sensor}
-    %         \entry{Designed test benches, ran timing analysis and fixed correlating timing issues}
-    %         \entry{Worked with international PCB, lens, cable, and CNC machining manufacturers}
+    %         \entry{Developed FPGA-based (Xilinx Artix-7) infrared machine vision camera that tracks targets at 815 frames per second using Onsemi Python 300 Image Sensor}
+    %         \entry{Worked with international PCB, lens, cable, and CNC manufacturers}
     %     \entrylistend
     \subheading
       {Naval Postgraduate School}{Monterey, CA}
@@ -167,27 +165,22 @@
         \entrylistend
   \subheadinglistend
 
-% \section{Projects}
-%     \vspace{3pt}
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%         {\textbf{Addie} $|$ \emph{\href{https://github.com/liamsnow/addie}{\color{blue}GitHub}}}{}
-%           \resumeItemListStart
-%             \resumeItem{}
-%           \resumeItemListEnd
-%     \resumeSubHeadingListEnd
-
-\section{Leadership \& Activities}
+\section{Projects}
   \vspace{3pt}
   \subheadingliststart
-    \subheading
-      {BreakerBots Robotics Team (FIRST/FRC)}{Pacific Grove, CA}
-      {Team Captain}{Aug 2017 \textbf{--} May 2022}
+    \projectheading
+      {\textbf{\href{https://github.com/LiamSnow/ical-rs}{ical-rs}}}{}
         \entryliststart
-            \entry{Learned to lead and work in a fast paced environment.}
-            \entry{Ran summer programming classes, teaching the local community Java and control systems.}
-            \entry{Implemented state-space control algorithms and latency-accounted vision tracking.}
-            \entry{Developed Electron dashboard webapp for monitoring, debugging, and tuning robots remotely in real-time.}
+            \entry{Developed efficient alternative ICalendar parser and serializer in Rust}
+            \entry{Fully implemented all ICalendar types and created macro to generate methods for all properties with their respective types (default and specified)}
+            \entry{Added support for non-standard (X \& IANA) properties and parameters}
+        \entrylistend
+    \projectheading
+      {\textbf{\href{https://github.com/LiamSnow/tensleep}{tensleep}}}{}
+        \entryliststart
+            \entry{Developed reliable multithreaded (tokio) Rust binary which runs on the Eight Sleep Pod 3 allowing for complete control over its functionality without any connection to the cloud.}
+            \entry{Implemented Axum API, UNIX socket communication to firmware + custom parsing, time-zone based scheduler, and thorough configuration options}
         \entrylistend
   \subheadinglistend
+
 \end{document}

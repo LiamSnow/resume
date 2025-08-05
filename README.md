@@ -1,11 +1,9 @@
-# Liam's Resume 🗒
+# Liam's Resume
 
-My resume/CV in LaTeX
+My resume/CV in Typst
 
-## Running
+## Building
 
 ```bash
-pdflatex resume.tex
+typst compile resume.typ
 ```
-
-TODO

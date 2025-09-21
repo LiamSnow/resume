@@ -38,10 +38,19 @@
 */
 
 == Skills
-- *Programming Languages*: Rust, Golang, C, C++, Python, Java, C\#, TypeScript, JavaScript, Lua, LabVIEW, Bash
-- *Technologies*: Tokio, Axum, Actix, Dioxus, Leptos, Gin, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Embedded Databases (SledDB), Embeddings/Vector Databases (ChromaDB), GNU/Linux, Unix, Git, GitHub, REST, WebSockets, GCP, Multi-threading, Async/Await
+- *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript, Bash
+- *Technologies*: Tokio, Axum, Actix, Dioxus, Leptos, Gin, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Embedded Databases (SledDB), Embeddings/Vector Databases (ChromaDB), Linux (Debian, Yocto, Arch, NixOS), Unix, Git, GitHub, CI/CD (GitHub Actions), REST, WebSockets, GCP, Multi-threading, Async/Await
 
 == Projects
+
+#project(
+  name: "opensleep (81★)",
+  dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
+  url: "github.com/liamsnow/opensleep",
+)
+- Developed open source firmware for the Eight Sleep Pod 3 in Rust
+- Reverse-engineering two custom USART protocols
+- Runs MQTT, STM32 comms, scheduler, presence detection, ..
 
 #project(
   name: "igloo",
@@ -53,14 +62,6 @@
 - Handles concurrent connection to 100+ devices
 - Clean Axum API (Websocket + REST). Custom rolled authentication & permissions 
 
-#project(
-  name: "opensleep",
-  dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
-  url: "liamsnow.com/projects/opensleep",
-)
-- Developed open source firmware for the Eight Sleep Pod 3 in Rust
-- Reverse-engineering two custom binary USART protocols using strace
-- Runs Actix webserver, MQTT, microcontroller communications, and custom scheduler
 
 == Work Experience
 
@@ -95,8 +96,7 @@
   dates: dates-helper(start-date: "May 2024", end-date: "Jul 2024"),
 )
 - Developed alpha prototype for startup in 10 weeks
-- Created AWS backend using Terraform
-- Made Lambda functions using Golang with Gin and PostgreSQL
+- Used AWS, Terraform, Lambda functions, Golang, Gin, RDS
 
 #work(
   title: "Software Intern",

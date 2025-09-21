@@ -1,6 +1,6 @@
 # Liam's Resume
 
-My resume/CV in Typst
+My resume in Typst
 
 ## Building
 

@@ -29,7 +29,7 @@
 
 == Skills
 - *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
-- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Gin   
+- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Gin, Protobuf   
 
 == Projects
 

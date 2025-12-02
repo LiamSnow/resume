@@ -1,21 +1,11 @@
 #import "@preview/basic-resume:0.2.8": *
 
-// Put your personal information here, replacing mine
-#let name = "William (Liam) Snow IV"
-#let email = "mail@liamsnow.com"
-#let github = "github.com/liamsnow"
-#let linkedin = "linkedin.com/in/william-snow-iv-140438169"
-#let personal-site = "liamsnow.com"
-
 #show: resume.with(
-  author: name,
-  // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
-  email: email,
-  github: github,
-  linkedin: linkedin,
-  personal-site: personal-site,
+  author: "William (Liam) Snow IV",
+  email: "mail@liamsnow.com",
+  github: "github.com/liamsnow",
+  linkedin: "linkedin.com/in/william-snow-iv-140438169",
+  personal-site: "liamsnow.com",
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",
@@ -38,30 +28,31 @@
 */
 
 == Skills
-- *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript, Bash
-- *Technologies*: Tokio, Axum, Actix, Dioxus, Leptos, Gin, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Embedded Databases (SledDB), Embeddings/Vector Databases (ChromaDB), Linux (Debian, Yocto, Arch, NixOS), Unix, Git, GitHub, CI/CD (GitHub Actions), REST, WebSockets, GCP, Multi-threading, Async/Await
+- *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
+- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Gin   
 
 == Projects
 
 #project(
-  name: "opensleep (81★)",
+  name: "opensleep (113★)",
   dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
-  url: "github.com/liamsnow/opensleep",
+  url: "liamsnow.com/projects/opensleep",
 )
 - Developed open source firmware for the Eight Sleep Pod 3 in Rust
-- Reverse-engineering two custom USART protocols
-- Runs MQTT, STM32 comms, scheduler, presence detection, ..
+- Reverse-engineered two custom USART protocols, reimplemented using custom Tokio codec
+- Adds Home Assistant integration (via MQTT), custom temperature profiles, remote configuration, presence detection, and privacy
+// TODO revise this ^^
 
 #project(
   name: "igloo",
   dates: dates-helper(start-date: "Jan 2025", end-date: "Present"),
   url: "liamsnow.com/projects/igloo",
 )
-- Intuitive and smart home automation platform connecting 10+ providers 
-- Developed visual node-based programming language with custom lexer, parser, and evaluation. Uses Dioxus for front-end
-- Handles concurrent connection to 100+ devices
-- Clean Axum API (Websocket + REST). Custom rolled authentication & permissions 
-
+- Building open-source smart home platform in *Rust* as Home Assistant alternative; integrates ESPHome, HomeKit, MQTT with visual programming language for automations
+- Built Entity-Component-System (ECS) model, allowing for strict component types while remaining extensible to new device types without core changes
+- Implemented query engine achieving >1M queries/sec throughput with 4µs average latency (*200ns single execution*)
+- Built extensive code generation system producing Component enums, type conversions, aggregators, and Python bindings from TOML definitions
+- Created custom IPC protocol with forward-compatible schema evolution using length-delimited Bincode over Unix sockets
 
 == Work Experience
 

@@ -80,14 +80,14 @@
 - Developed Atlassian Confluence RAG chatbot to help users find answers and cite sources
   - Used Confluence API, OpenAI embeddings, ChromaDB, and LangChain 
 
-#work(
-  title: "Backend Developer",
-  location: "Remote",
-  company: "Veripay, LLC",
-  dates: dates-helper(start-date: "May 2024", end-date: "Jul 2024"),
-)
-- Developed alpha prototype for startup in 10 weeks
-- Used AWS, Terraform, Lambda functions, Golang, Gin, RDS
+// #work(
+//   title: "Backend Developer",
+//   location: "Remote",
+//   company: "Veripay, LLC",
+//   dates: dates-helper(start-date: "May 2024", end-date: "Jul 2024"),
+// )
+// - Developed alpha prototype for startup in 10 weeks
+// - Used AWS, Terraform, Lambda functions, Golang, Gin, RDS
 
 #work(
   title: "Software Intern",

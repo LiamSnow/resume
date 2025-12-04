@@ -27,6 +27,17 @@
 * #generic-one-by-two(left: "", right: "")
 */
 
+== Education
+
+#edu(
+  institution: "Worcester Polytechnic Institute",
+  location: "Worcester, MA",
+  dates: dates-helper(start-date: "Aug 2022", end-date: "May 2026"),
+  degree: "BS in Electrical & Computer Engineering\nMS in Computer Science",
+  // Uncomment the line below if you want edu formatting to be consistent with everything else
+  // consistent: true
+)
+
 == Skills
 - *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
 - *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Gin, Protobuf   
@@ -98,14 +109,4 @@
 - Worked under Professor Ray Gamache for programming and assembling robots
 - Programmed LIDAR, ultrasonic, radar, AHRS, and GPS sensors in LabVIEW
 
-== Education
-
-#edu(
-  institution: "Worcester Polytechnic Institute",
-  location: "Worcester, MA",
-  dates: dates-helper(start-date: "Aug 2022", end-date: "May 2026"),
-  degree: "BS in Electrical & Computer Engineering\nMS in Computer Science",
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
-)
 

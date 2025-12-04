@@ -86,7 +86,7 @@
   company: "Phreesia, Inc.",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Aug 2024"),
 )
-- Worked on a team to develop a complete rewrite of the Integrations software using .NET Core, Websockets, and REST APIs
+- Worked on a team to develop a complete rewrite of the Integrations software using .NET Core & Websockets
 - Developed Atlassian Confluence RAG chatbot to help users find answers and cite sources
   - Used Confluence API, OpenAI embeddings, ChromaDB, and LangChain 
 

@@ -50,7 +50,7 @@
 )
 - Building open-source smart home platform in *Rust* as Home Assistant alternative; integrates ESPHome, HomeKit, MQTT with visual programming language for automations
 - Built Entity-Component-System (ECS) model, allowing for strict component types while remaining extensible to new device types without core changes
-- Implemented query engine achieving >1M queries/sec throughput with 4µs average latency (*200ns single execution*)
+- Implemented query engine achieving *>1 million queries/sec* throughput with 4µs average latency. Internally (without channel overhead) queries execute in an average of *200ns*.
 - Built extensive code generation system producing Component enums, type conversions, aggregators, and Python bindings from TOML definitions
 - Created custom IPC protocol with forward-compatible schema evolution using length-delimited Bincode over Unix sockets
 
@@ -63,7 +63,7 @@
   dates: dates-helper(start-date: "Jun 2025", end-date: "Aug 2025"),
 )
 - Developed a security investigation summarizer Slack bot in Golang
-  - Saves >100 hours a year
+  - Saves >100 hours a year of manual work by security engineers
   - Collects data from Slack and other sources and builds a report using AWS Bedrock in \~1 minute 
 - Made VM automation which automatically finds new CVEs across multiple security tools (Snyk, Upwind, etc.) and sends results over Slack
 - Developed security news article downloader which automatically scrapes readable content from web pages and formats them into a NextJS article reader

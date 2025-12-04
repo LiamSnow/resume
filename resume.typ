@@ -40,7 +40,7 @@
 
 == Skills
 - *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
-- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL (GC Datastore), Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Gin, Protobuf   
+- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL, Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Protobuf   
 
 == Projects
 
@@ -86,8 +86,7 @@
   company: "Phreesia, Inc.",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Aug 2024"),
 )
-- Worked on a team to develop a complete rewrite of the Integrations software
-  - Used .NET Core, Websockets, and REST APIs
+- Worked on a team to develop a complete rewrite of the Integrations software using .NET Core, Websockets, and REST APIs
 - Developed Atlassian Confluence RAG chatbot to help users find answers and cite sources
   - Used Confluence API, OpenAI embeddings, ChromaDB, and LangChain 
 

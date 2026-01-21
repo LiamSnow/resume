@@ -39,13 +39,13 @@
 )
 
 == Skills
-- *Programming Languages*: Rust (2 years), Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
+- *Programming Languages*: Rust, Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
 - *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL, Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Protobuf   
 
 == Projects
 
 #project(
-  name: "opensleep (113★)",
+  name: "opensleep (120★)",
   dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
   url: "liamsnow.com/projects/opensleep",
 )

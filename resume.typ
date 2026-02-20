@@ -39,8 +39,13 @@
 )
 
 == Skills
-- *Programming Languages*: Rust, Golang, C, C++, Java, C\#, Python, TypeScript, JavaScript
-- *Technologies*: REST, WebSockets, Multi-threading, Async/Await, SQL (SQLite, PostgreSQL, RDS), NoSQL, Linux (Arch, Debian), Unix, Git, GitHub, CI/CD (GitHub Actions), Tokio, Axum, Actix, Dioxus, Leptos, Protobuf   
+- *Languages*: Rust #box(image("cuddlyferris.svg", width: 10pt)), Golang, C, Java, C\#, SystemVerilog, TypeScript, JavaScript, WIT
+- *Systems*: io\_uring, Tokio, shared memory, no\_std, multi-threading, async/await   
+- *OS*: Linux (Arch, Debian, Talos), Illumos (Helios), Unix
+- *Protocols*: REST, MQTT, WebSockets, Protocol Buffers (Protobuf), SPI, I2C, UART 
+- *Infrastructure*: AWS, Docker, Kubernetes, SQL, NoSQL, Git, CI/CD
+- *Profiling*: perf, flamegraph, samply, tracing
+- *Other*: WASM, Altium Designer, Fusion 360
 
 == Projects
 
@@ -59,11 +64,10 @@
   dates: dates-helper(start-date: "Jan 2025", end-date: "Present"),
   url: "liamsnow.com/projects/igloo",
 )
-- Building open-source smart home platform in *Rust* as Home Assistant alternative; integrates ESPHome, HomeKit, MQTT with visual programming language for automations
-- Built Entity-Component-System (ECS) model, allowing for strict component types while remaining extensible to new device types without core changes
-- Implemented query engine achieving *>1 million queries/sec* throughput with 4µs average latency. Internally (without channel overhead) queries execute in an average of *200ns*.
-- Built extensive code generation system producing Component enums, type conversions, aggregators, and Python bindings from TOML definitions
-- Created custom IPC protocol with forward-compatible schema evolution using length-delimited Bincode over Unix sockets
+- Building open-source smart home platform in *Rust* as Home Assistant competitor 
+- Introduced a new device model based on ECS (entity-component-system), massively simplifying the core system, providing more flexibility, backwards compatibility, and all with strict typing
+- Implemented query engine achieving *>1 million queries/sec* throughput with 4µs average latency. Internally queries execute in an average of *200ns*.
+- Created a visual node-based programming language for automations in WASM. Uses pure web-sys and wasm-bindgen (no framework) and supports over 10,000 nodes. 
 
 == Work Experience
 

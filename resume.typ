@@ -56,7 +56,7 @@
 )
 - Developed open source firmware for the Eight Sleep Pod 3 in Rust
 - Reverse-engineered two custom USART protocols, reimplemented using custom Tokio codec
-- Adds Home Assistant integration (via MQTT), custom temperature profiles, remote configuration, presence detection, and privacy
+- Adds Home Assistant integration (via MQTT), custom temperature profiles, remote configuration, & presence detection
 // TODO revise this ^^
 
 #project(

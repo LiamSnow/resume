@@ -40,7 +40,7 @@
 
 == Skills
 - *Languages*: Rust #box(image("cuddlyferris.svg", width: 10pt)), Golang, C, Java, C\#, SystemVerilog, TypeScript, JavaScript, WIT
-- *Systems*: io\_uring, Tokio, shared memory, no\_std, multi-threading, async/await   
+- *Systems*: /*io\_uring, */Tokio, shared memory, no\_std, multi-threading, async/await   
 - *OS*: Linux (Arch, Debian, Talos), Illumos (Helios), Unix
 - *Protocols*: REST, MQTT, WebSockets, Protocol Buffers (Protobuf), SPI, I2C, UART 
 - *Infrastructure*: AWS, Docker, Kubernetes, SQL, NoSQL, Git, CI/CD

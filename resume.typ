@@ -33,7 +33,7 @@
   institution: "Worcester Polytechnic Institute",
   location: "Worcester, MA",
   dates: dates-helper(start-date: "Aug 2022", end-date: "May 2026"),
-  degree: "BS in Electrical & Computer Engineering\nMS in Computer Science",
+  degree: "BS in Electrical & Computer Engineering\nMS in Computer Science  GPA:3.7",
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )

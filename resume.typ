@@ -72,9 +72,9 @@
 == Work Experience
 
 #work(
-  title: "Security Intern",
+  title: "Software Engineer",
   location: "Remote",
-  company: "Cyera, Inc.",
+  company: [Cyera #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2025", end-date: "Aug 2025"),
 )
 - Developed a security investigation summarizer Slack bot in Golang
@@ -85,9 +85,9 @@
 - Made dashboard which displays security team's contributions to sales. Uses Atlassian Jira and Salesforce APIs in Golang
 
 #work(
-  title: "Software Intern",
+  title: "Software Engineer",
   location: "Remote",
-  company: "Phreesia, Inc.",
+  company: [Phreesia #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2023", end-date: "Aug 2024"),
 )
 - Worked on a team to develop a complete rewrite of the Integrations software using .NET Core & Websockets
@@ -104,9 +104,9 @@
 // - Used AWS, Terraform, Lambda functions, Golang, Gin, RDS
 
 #work(
-  title: "Software Intern",
+  title: "Software Engineer",
   location: "Monterey, CA",
-  company: "Naval Postgraduate School",
+  company: [Naval Postgraduate School #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2019", end-date: "Oct 2020"),
 )
 - Worked under Professor Ray Gamache for programming and assembling robots

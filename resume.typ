@@ -39,35 +39,41 @@
 )
 
 == Skills
-- *Languages*: Rust #box(image("cuddlyferris.svg", width: 10pt)), Golang, C, Java, C\#, SystemVerilog, TypeScript, JavaScript, WIT
-- *Systems*: /*io\_uring, */Tokio, shared memory, no\_std, multi-threading, async/await   
+- *Languages*: Rust #box(image("cuddlyferris.svg", width: 10pt)), Golang, C, Java, C\#, SystemVerilog, Python, TypeScript, JavaScript, WIT
+- *Systems*: atomics, epoll, non-blocking IO, shared memory, multi-threading, async/await   
 - *OS*: Linux (Arch, Debian, Talos), Illumos (Helios), Unix
-- *Protocols*: REST, MQTT, WebSockets, Protocol Buffers (Protobuf), SPI, I2C, UART 
-- *Infrastructure*: AWS, Docker, Kubernetes, SQL, NoSQL, Git, CI/CD
-- *Profiling*: perf, flamegraph, samply, tracing
-- *Other*: WASM, Altium Designer, Fusion 360
+- *Other*: WASM, AWS, Docker, Kubernetes, SQL, NoSQL, Git, CI/CD
 
 == Projects
 
 #project(
-  name: "opensleep (120★)",
+  name: "opensleep (128★)",
   dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
   url: "liamsnow.com/projects/opensleep",
 )
-- Developed open source firmware for the Eight Sleep Pod 3 in Rust
-- Reverse-engineered two custom USART protocols, reimplemented using custom Tokio codec
-- Adds Home Assistant integration (via MQTT), custom temperature profiles, remote configuration, & presence detection
-// TODO revise this ^^
+- Developed open source firmware for the Eight Sleep Pod 3 in Rust, which is more powerful & completely private
+- Reverse-engineered C++ binary (including 2 bespoke UART protocols) using a custom harness/tracer
+- Provides presence detection over MQTT, enabling smart home automations such as reading your calendar when you get out of bed
+
+#project(
+  name: "liamsnow.com",
+  dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
+  url: "liamsnow.com/projects/liamsnow_com",
+)
+- Created a fast personal website in Rust and Typst
+- Hand rolled HTTP/1.1 server with near zero-copy response dispatching (pre-compressed & pre-encoded responses)
+- Made custom Typst world with an in-memory filesystem and rayon parallel compilation, achieving *\~130ms builds*
+- Hosted on Helios illumos in my home lab, requiring patching and upstream PRs to libc, Fish, and rust-rpxy 
 
 #project(
   name: "igloo",
   dates: dates-helper(start-date: "Jan 2025", end-date: "Present"),
   url: "liamsnow.com/projects/igloo",
 )
-- Building open-source smart home platform in *Rust* as Home Assistant competitor 
-- Introduced a new device model based on ECS (entity-component-system), massively simplifying the core system, providing more flexibility, backwards compatibility, and all with strict typing
-- Implemented query engine achieving *>1 million queries/sec* throughput with 4µs average latency. Internally queries execute in an average of *200ns*.
-- Created a visual node-based programming language for automations in WASM. Uses pure web-sys and wasm-bindgen (no framework) and supports over 10,000 nodes. 
+- Building a FOSS, DIY smart home Rust library which enables more complex smart homes
+- Introduced a new device model based on ECS (entity-component-system), which fully expresses devices' capabilities while maintaining cohesion
+- Revised query engine 4x, bringing it from its initial 22k QPS (queries per second) to over *1 billion QPS*
+- Created a visual node-based programming language in WASM (WebAssembly) with a bespoke framework built on wasm-bindgen, easily supporting over 10k nodes 
 
 == Work Experience
 
@@ -77,12 +83,11 @@
   company: [Cyera #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2025", end-date: "Aug 2025"),
 )
-- Developed a security investigation summarizer Slack bot in Golang
-  - Saves >100 hours a year of manual work by security engineers
-  - Collects data from Slack and other sources and builds a report using AWS Bedrock in \~1 minute 
-- Made VM automation which automatically finds new CVEs across multiple security tools (Snyk, Upwind, etc.) and sends results over Slack
-- Developed security news article downloader which automatically scrapes readable content from web pages and formats them into a NextJS article reader
-- Made dashboard which displays security team's contributions to sales. Uses Atlassian Jira and Salesforce APIs in Golang
+- Developed Golang tool to assist during and after security investigations
+  - Can be instrumental for velocity and clarity during investigations
+  - Saves $>100$ hours a year of manual work for creating post-mortems
+- Made vulnerability management automation which alerts engineers about new CVEs from Snyk and Upwind
+- Created Golang automation that aggregates data from Atlassian Jira and Salesforce to calculate the security team's contributions to sales
 
 #work(
   title: "Software Engineer",
@@ -90,9 +95,8 @@
   company: [Phreesia #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2023", end-date: "Aug 2024"),
 )
-- Worked on a team to develop a complete rewrite of the Integrations software using .NET Core & Websockets
-- Developed Atlassian Confluence RAG chatbot to help users find answers and cite sources
-  - Used Confluence API, OpenAI embeddings, ChromaDB, and LangChain 
+- Worked on MVP for a major rewrite of the Integrations software, improving the architecture, code quality, and upgrading to .NET Core 
+- Developed search interface to help engineers find documentation more easily
 
 // #work(
 //   title: "Backend Developer",
@@ -109,7 +113,7 @@
   company: [Naval Postgraduate School #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2019", end-date: "Oct 2020"),
 )
-- Worked under Professor Ray Gamache for programming and assembling robots
-- Programmed LIDAR, ultrasonic, radar, AHRS, and GPS sensors in LabVIEW
+- Worked under Professor Ray Gamache, setting up and running labs
+- Created LabVIEW libraries for LIDAR, ultrasonic, radar, AHRS, and GPS
 
 

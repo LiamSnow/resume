@@ -47,7 +47,7 @@
 == Projects
 
 #project(
-  name: "opensleep (128★)",
+  name: "opensleep (130★)",
   dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
   url: "liamsnow.com/projects/opensleep",
 )
@@ -60,27 +60,29 @@
   dates: dates-helper(start-date: "Jan 2026", end-date: "Present"),
   url: "liamsnow.com/projects/liamsnow_com",
 )
-- Created a fast personal website in Rust and Typst
+- Personal website in Rust and Typst, hosted on illumos in my home lab
 - Hand rolled HTTP/1.1 server with near zero-copy response dispatching (pre-compressed & pre-encoded responses)
 - Made custom Typst world with an in-memory filesystem and rayon parallel compilation, achieving *\~130ms builds*
-- Hosted on Helios illumos in my home lab, requiring patching and upstream PRs to libc, Fish, and rust-rpxy 
 
-#project(
-  name: "igloo",
-  dates: dates-helper(start-date: "Jan 2025", end-date: "Present"),
-  url: "liamsnow.com/projects/igloo",
-)
-- Building a FOSS, DIY smart home Rust library which enables more complex smart homes
-- Introduced a new device model based on ECS (entity-component-system), which fully expresses devices' capabilities while maintaining cohesion
-- Revised query engine 4x, bringing it from its initial 22k QPS (queries per second) to over *1 billion QPS*
-- Created a visual node-based programming language in WASM (WebAssembly) with a bespoke framework built on wasm-bindgen, easily supporting over 10k nodes 
+
+// - Hosted on illumos in my home lab, requiring patching and upstream PRs to libc, Fish, and rust-rpxy 
+
+// #project(
+//   name: "igloo",
+//   dates: dates-helper(start-date: "Jan 2025", end-date: "Present"),
+//   url: "liamsnow.com/projects/igloo",
+// )
+// - Building a FOSS, DIY smart home Rust library which enables more complex smart homes
+// - Introduced a new device model based on ECS (entity-component-system), which fully expresses devices' capabilities while maintaining cohesion
+// - Revised query engine 4x, bringing it from its initial 22k QPS (queries per second) to over *1 billion QPS*
+// - Created a visual node-based programming language in WASM (WebAssembly) with a bespoke framework built on wasm-bindgen, easily supporting over 10k nodes 
 
 == Work Experience
 
 #work(
-  title: "Software Engineer",
+  title: [Cyera],
   location: "Remote",
-  company: [Cyera #sym.dot.op Internship],
+  company: [Software Engineer #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2025", end-date: "Aug 2025"),
 )
 - Developed Golang tool to assist during and after security investigations
@@ -90,27 +92,36 @@
 - Created Golang automation that aggregates data from Atlassian Jira and Salesforce to calculate the security team's contributions to sales
 
 #work(
-  title: "Software Engineer",
+  title: [Phreesia],
   location: "Remote",
-  company: [Phreesia #sym.dot.op Internship],
+  company: [Software Engineer #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2023", end-date: "Aug 2024"),
 )
 - Worked on MVP for a major rewrite of the Integrations software, improving the architecture, code quality, and upgrading to .NET Core 
 - Developed search interface to help engineers find documentation more easily
 
-// #work(
-//   title: "Backend Developer",
-//   location: "Remote",
-//   company: "Veripay, LLC",
-//   dates: dates-helper(start-date: "May 2024", end-date: "Jul 2024"),
-// )
-// - Developed alpha prototype for startup in 10 weeks
-// - Used AWS, Terraform, Lambda functions, Golang, Gin, RDS
+#work(
+  title: [Veripay, LLC],
+  location: "Remote",
+  company: [Software Engineer #sym.dot.op Contract],
+  dates: dates-helper(start-date: "May 2024", end-date: "Jul 2024"),
+)
+- Developed alpha prototype for startup in 10 weeks
+- Used Terraform, AWS, Golang Lambda functions, RDS, and Cognito
 
 #work(
-  title: "Software Engineer",
+  title: [Advanced Survey Design, LLC],
+  location: "Remote",
+  company: [Software Engineer #sym.dot.op Contract],
+  dates: dates-helper(start-date: "Jan 2022", end-date: "Feb 2022"),
+)
+- Developed survey websites in .NET and migrated code to .NET Core
+
+
+#work(
+  title: [Naval Postgraduate School],
   location: "Monterey, CA",
-  company: [Naval Postgraduate School #sym.dot.op Internship],
+  company: [Software Engineer #sym.dot.op Internship],
   dates: dates-helper(start-date: "Jun 2019", end-date: "Oct 2020"),
 )
 - Worked under Professor Ray Gamache, setting up and running labs
